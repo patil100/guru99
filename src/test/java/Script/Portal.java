@@ -9,34 +9,35 @@ import org.testng.annotations.Test;
 
 import Function.Driver;
 import io.qameta.allure.*;
-import Read_Write_File.ReadFromCSV;
-import Report.AllureReport;
+
 public class Portal {
 
-	
 	WebDriver driver;
-	 static WebDriverWait wait;
-	
-	 @BeforeTest
+	WebDriverWait wait;
+
+	@BeforeTest
 	public void Driverallocation() {
-		Driver.driverAllocation("chrome");
-		
-		  wait = new WebDriverWait(driver, 40);	
-	 }
-	
-	@Step
-	public void openurl(String url) {
-		String URL=url;
-		driver.get(URL);
-		SaveTextLog("Opening URL: " + URL); 
-		Screenshot(driver,"opening url");
-		
+		driver = Driver.driverAllocation("chrome"); // Fix: Assign WebDriver instance
+		if (driver == null) {
+			throw new IllegalStateException("WebDriver is null. Check Driver.driverAllocation()");
+		}
+		wait = new WebDriverWait(driver, 40);
 	}
-	
+
+	@Step("Opening URL: {url}")
+	public void openurl(String url) {
+		if (driver == null) {
+			throw new IllegalStateException("WebDriver is not initialized. Ensure Driverallocation() is executed correctly.");
+		}
+
+		driver.get(url);
+		SaveTextLog("Opening URL: " + url);
+		Screenshot(driver, "opening url");
+	}
+
 	@Test
 	public void APortal() {
-		
+		driver.get("https://cbuatportal.tourasuae.com/login");
+		//openurl("https://cbuatportal.tourasuae.com/login");
 	}
-	
-
 }
