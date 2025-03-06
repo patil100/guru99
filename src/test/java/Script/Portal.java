@@ -38,6 +38,8 @@ public class Portal {
 	@Test
 	public void APortal() {
 		driver.get("https://cbuatportal.tourasuae.com/login");
+
+		System.out.println("cross border URL opened ");
 		//openurl("https://cbuatportal.tourasuae.com/login");
 	}
 }

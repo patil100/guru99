@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-06T12:16:23 IST" name="Suite" finished-at="2025-03-06T12:16:47 IST" duration-ms="23987">
+    <groups>
+    </groups>
+    <test started-at="2025-03-06T12:16:23 IST" name="Test" finished-at="2025-03-06T12:16:47 IST" duration-ms="23987">
+      <class name="Script.Portal">
+        <test-method is-config="true" signature="Driverallocation()[pri:0, instance:Script.Portal@71075444]" started-at="2025-03-06T12:16:23 IST" name="Driverallocation" finished-at="2025-03-06T12:16:41 IST" duration-ms="17333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Driverallocation -->
+        <test-method signature="APortal()[pri:0, instance:Script.Portal@71075444]" started-at="2025-03-06T12:16:41 IST" name="APortal" finished-at="2025-03-06T12:16:47 IST" duration-ms="6204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APortal -->
+      </class> <!-- Script.Portal -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
