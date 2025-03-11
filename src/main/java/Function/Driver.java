@@ -9,6 +9,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class Driver {
 
+
+	private static final String GRID_URL = "http://43.204.214.235:4444/wd/hub";
 	public static WebDriver driverAllocation(String browserName) {
 		WebDriver driver = null;
 
@@ -40,8 +42,7 @@ public class Driver {
 
 				// Set Firefox Options
 				FirefoxOptions options = new FirefoxOptions();
-				options.addPreference("dom.webdriver.enabled", false);
-				options.addPreference("useAutomationExtension", false);
+
 
 				driver = new FirefoxDriver(options);
 				System.out.println("Browser opened in Firefox");
