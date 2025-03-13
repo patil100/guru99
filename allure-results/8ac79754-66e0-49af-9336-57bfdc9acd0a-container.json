@@ -1,0 +1,1 @@
+{"uuid":"8ac79754-66e0-49af-9336-57bfdc9acd0a","name":"Firefox Test","children":["95567bd7-fdf5-45dc-a5be-b81a143e316a"],"befores":[{"name":"Driverallocation","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1741861927638,"stop":1741861937962}],"afters":[],"start":1741861927606,"stop":1741861942762}

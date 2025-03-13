@@ -10,7 +10,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 public class Driver {
 
 
-	private static final String GRID_URL = "http://43.204.214.235:4444/wd/hub";
+	//private static final String GRID_URL = "http://43.204.214.235:4444/wd/hub";
 	public static WebDriver driverAllocation(String browserName) {
 		WebDriver driver = null;
 
